@@ -109,7 +109,7 @@ body {
   border-radius: 15px;
   object-fit: cover;
   opacity: 0;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   box-shadow: 6px 40px 40px rgba(243, 5, 5, 0.2);
