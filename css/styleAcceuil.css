@@ -697,11 +697,8 @@ body {
     flex-direction: column;
   }
 
-  .imageContainer .imageLink a {
-    padding: 20px 30px;
-    font-size: 3.2em;
-  }
 
+  
   .rubanText {
     font-size: 1em;
     top: 40%;
