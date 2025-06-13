@@ -23,25 +23,45 @@ Ce projet est un site web statique pour la présentation des articles d’un mag
 ## 📁 Structure des fichiers
 
 /verking-site/
+
 ├── index.html
+
 ├── /css/
+
 │   ├── bootstrap.min.css
+
 │   └── styles.css
+
 ├── /js/
+
 │   └── main.js           # (facultatif, pour les éventuelles interactions)
+
 ├── /style/
+
 │   └── styleAccueil.css
+
 ├── /images/
+
 │   ├── logo.png
+
 │   ├── Wlecome1.png
+
 │   ├── Welcome2.png
+
 │   ├── produit1.png
+
 │   ├── produit2.png
+
 │   ├── produit3.png
+
 │   ├── ruban.jpg
+
 │   └── ruban2.jpg
+
 ├── /fonts/               # (optionnel, si tu héberges toi-même les polices)
+
 ├── README.md
+
 └── /assets/              # (optionnel, pour ressources additionnelles)
 
 
