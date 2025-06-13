@@ -1,31 +1,42 @@
 /* === BODY === */
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 .main-content {
-  padding-top: 70px;
-  background-image: url('../images/background.jpg');
+  padding-top: 70px; /* même hauteur que la navbar */
+  background-image: url('../photos/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 900px;
 }
 
-.Welcome-wrapper {
+.welcome-wrapper {
   display: flex;
+  
 }
 
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  30% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 0; transform: translateY(30px); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
+
 
 .Welcome {
   height: 200px;
   width: 480px;
   color: white;
-  font-size: 2.5em;
+  font-size: 2.5m;
   text-align: center;
   margin-top: 110px;
   margin-left: 700px;
@@ -38,29 +49,46 @@ body {
   width: 488px;
   color: white;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.5m;
   margin-top: 50px;
   margin-left: 700px;
   border-radius: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   background-color: red;
+  
 }
 
 .welcomeFleche a {
   text-decoration: none;
+  text-align: center;
   color: white;
-  font-size: 1.2em;
+  font-size: 5.2m;
 }
 
 .welcomeFleche:hover {
   background-color: white;
-  color: red;
+  color:red;
   box-shadow: 6px 30px 30px red;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .welcomeFleche a:hover {
-  color: red;
+  color:red;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.welcomeFleche h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.welcomeFleche h1:hover {
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
 
 .Welcome-image-container {
   height: 600px;
@@ -68,10 +96,14 @@ body {
   margin-top: -340px;
   margin-left: 60px;
   display: flex;
+  color: white;
+  
 }
+
 
 .welcomeImage {
   position: absolute;
+  justify-content: center;
   height: 450px;
   width: 500px;
   border-radius: 15px;
@@ -81,25 +113,39 @@ body {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   box-shadow: 6px 40px 40px rgba(243, 5, 5, 0.2);
+  border-color: rgb(11, 10, 10);
 }
 
+/* Première image s'affiche en premier */
 .img1 {
   animation-name: fade1;
 }
 
+/* Deuxième image s'affiche en alternance */
 .img2 {
   animation-name: fade2;
 }
 
+/* Animation pour image 1 */
 @keyframes fade1 {
-  0%, 50% { opacity: 0.9; }
-  50.01%, 100% { opacity: 0; }
+  0%, 50% {
+    opacity: 0.9;
+  }
+  50.01%, 100% {
+    opacity: 0;
+  }
 }
 
+/* Animation pour image 2 */
 @keyframes fade2 {
-  0%, 50% { opacity: 0; }
-  50.01%, 100% { opacity: 0.9; }
+  0%, 50% {
+    opacity: 0;
+  }
+  50.01%, 100% {
+    opacity: 0.9;
+  }
 }
+
 
 /* === NAVBAR === */
 .navbar {
@@ -111,6 +157,7 @@ body {
   z-index: 1000;
 }
 
+/* === NAV CONTAINER === */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -120,10 +167,12 @@ body {
   align-items: center;
 }
 
+/* === LOGO === */
 .logo img {
   height: 50px;
 }
 
+/* === NAV LINKS === */
 .nav-links {
   list-style: none;
   display: flex;
@@ -152,6 +201,7 @@ body {
 
 /* === DROPDOWN MENU === */
 .dropdown {
+  border-radius: 4px;
   position: absolute;
   top: 100%;
   left: 0;
@@ -168,118 +218,267 @@ body {
 }
 
 .dropdown ul {
-  padding: 12px;
+  padding: 12px 0px;
   color: red;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* === DESCRIPTION === */
 .descriptionText {
   height: 250px;
   width: 530px;
   margin-left: 60px;
   margin-top: -30px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5m;
   border-radius: 15px;
   box-shadow: 6px 30px 30px rgb(53, 52, 52);
 }
 
 .descriptionImage {
+  height: auto;
   width: 300px;
-  margin-left: 700px;
+  margin-left:700px;
   margin-top: -200px;
 }
 
-/* === ICONES SECTION === */
 .IconeQuestion h1 {
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .IconeQuestion h1:hover {
+  text-transform: capitalize;
   color: red;
   text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
 }
 
-.classIcone1, .classIcone2, .classIcone3 {
+
+.classIcone1 {
+  margin-top: 200px;
   height: 200px;
   width: 400px;
   text-align: center;
   background-color: red;
-  color: white;
+  color:white;
   border-radius: 15px;
-  padding: 20px;
+  margin-left: 20px;
+  margin-top: 80px;
 }
 
-.classIcone1 { margin-left: 20px; }
-.classIcone2 { margin-left: 490px; margin-top: -220px; }
-.classIcone3 { margin-left: 950px; margin-top: -220px; }
-
-.classIcone1:hover, .classIcone2:hover, .classIcone3:hover {
-  background-color: white;
+.classIcone1:hover {
+  background-color:white;
   color: red;
   box-shadow: 6px 30px 30px red;
-  transition: 0.3s ease;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, position 0.3s ease;
 }
 
-.Voir.Plus a {
+.classIcone1 a {
   text-decoration: none;
+  text-align: center;
   color: red;
-  background: white;
+  font-size: 5.2m;
+ padding: 10px 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.classIcone2 {
+  margin-top: 200px;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  background-color: red;
+  color:white;
+  border-radius: 15px;
+  margin-left: 490px;
+  margin-top: -220px;
+}
+
+.classIcone2:hover {
+  background-color:white;
+  color: red;
+  box-shadow: 6px 30px 30px red;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, position 0.3s ease;
+}
+
+.classIcone2 a {
+  text-decoration: none;
+  text-align: center;
+  color: red;
+  font-size: 5.2m;
   padding: 10px 30px;
   border-radius: 15px;
+  background-color: white;
 }
 
-/* === IMAGE GRID === */
+.classIcone3 {
+  margin-top: 200px;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  background-color: red;
+  color:white;
+  border-radius: 15px;
+  margin-left: 950px;
+  margin-top: -220px;
+}
+
+.classIcone3:hover {
+  background-color:white;
+  color: red;
+  box-shadow: 6px 30px 30px red;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, position 0.3s ease;
+}
+
+.classIcone3 a {
+  text-decoration: none;
+  text-align: center;
+  color: red;
+  font-size: 5.2m;
+  padding: 10px 30px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.classIcone1 h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.classIcone1 h1:hover {
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
+
+.classIcone1 h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.classIcone2 h1:hover {
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
+
+.classIcone2 h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.classIcone2 h1:hover {
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
+.classIcone3 h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.classIcone3 h1:hover {
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
+.classIcone1:hover  a, .classIcone2:hover  a, .classIcone3:hover  a {
+  color: white;
+  text-transform: capitalize;
+  background-color: red;
+  text-shadow: 0px 3px 3px red;
+  transition: text-transform 0.3 ease, color 0.3 ease, text-shadow 0.3 ease;
+}
+
 .imageContainer {
   padding: 20px;
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   background-color: wheat;
+  margin-top: 10rem;
+  text-align: center;
+  justify-content: center;
   height: 900px;
 }
 
-.imageContainer .image img {
-  margin: 20px;
+
+.imageContainer  .image img {
+  margin-top: 20px;
+  padding: 2rem;
   width: 250px;
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 15%;
+  margin-bottom: 20px;
 }
 
-.imageContainer .image img:hover {
+.imageContainer  .image img:hover {
   transform: translateY(-8px);
   box-shadow: 0px 20px 20px red;
 }
 
-.imageContainer .imageLink a {
-  padding: 10px 40px;
+.imageContainer  .imageLink a {
+  padding: 20px 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   border-radius: 15px;
   background-color: red;
-  color: white;
   text-decoration: none;
+  color: white;
 }
 
-.imageContainer .imageLink a:hover {
+.imageContainer  .imageLink a:hover {
   background-color: white;
   color: red;
   box-shadow: 6px 30px 30px red;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: capitalize;
 }
 
-/* === RUBAN === */
 .rubanContainer {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 .rubanContainer img {
+  display: flex;
+  flex-direction: column;
   width: 50%;
 }
 
-.rubanText {
+.ruban2 {
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+.ruban1 {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.ruban p {
   text-align: center;
+  font-family:  'Times New Roman', Times, serif;
   color: white;
-  font-size: 2.5em;
+  font-size:2.5em;
   text-shadow: 0px 2px 2px black;
   margin-top: -375px;
 }
@@ -289,22 +488,53 @@ body {
   text-align: center;
 }
 
-/* === RESPONSIVE === */
+
+/* Petits écrans (smartphones) */
 @media (max-width: 768px) {
-  .Welcome-wrapper {
+  .welcome-wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .Welcome, .welcomeFleche, .Welcome-image-container,
-  .descriptionText, .descriptionImage,
-  .classIcone1, .classIcone2, .classIcone3 {
-    width: 90%;
+  .Welcome, .welcomeFleche, .Welcome-image-container {
     margin: 20px auto;
+    width: 90%;
+    font-size: 1.5em;
   }
 
   .welcomeImage {
     width: 100%;
     height: auto;
   }
+
+  .descriptionText, .descriptionImage {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .classIcone1, .classIcone2, .classIcone3 {
+    margin: 20px auto;
+    width: 90%;
+  }
 }
+
+/* Tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .welcome-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Welcome, .welcomeFleche, .Welcome-image-container {
+    margin: 40px auto;
+    width: 80%;
+  }
+
+  .classIcone1, .classIcone2, .classIcone3 {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+
+
