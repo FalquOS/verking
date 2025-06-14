@@ -63,11 +63,12 @@ body {
 /* === DROPDOWN MENU === */
 .dropdown {
   border-radius: 4px;
+  list-style: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: rgb(231, 191, 191);
-  min-width: 200px;
+  min-width: 250px;
   display: none;
   flex-direction: column;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -78,8 +79,9 @@ body {
   display: flex;
 }
 
-.dropdown ul {
+.dropdown li {
   padding: 12px 0px;
+  list-style: none;
   color: red;
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
