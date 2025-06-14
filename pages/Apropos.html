@@ -11,36 +11,158 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styleApropos.css">
+    <link rel="stylesheet" href="../css/styleApropos.css">
 </head>
 <body>  
    
     <nav class="navbar">
         <div class="nav-container">
           <a href="#" class="logo">
-            <img src="../images/logo2.png" alt="Logo" style="height: 50px;">
+            <img src="../images/logo.png" alt="Logo" style="height: 50px;">
           </a>
           <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Tous les produits</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./tousLesProduits.html">Tous les produits</a></li>
             <li class="dropdown-parent">
-              <a href="#">Catégories</a>
+              <a href="./tousLesProduits.html">Catégories</a>
               <ul class="dropdown">
-                <ul><a href="#" class="produitsEnfant">➤ Primaire et crèche</a></ul>
-                <ul><a href="#" class="produitsCem">➤ CEM et Lycée</a></ul>
-                <ul><a href="#" class="produitsPro">➤ Adultes et pro</a></ul>
-                <ul><a href="#" class="produitsTrousse">➤ Trousse</a></ul>
-                <ul><a href="#" class="produitsBureautique">➤ Bureautique</a></ul>
+                <ul><a href="./tousLesProduits.html" class="produitsEnfant">➤ Primaire et crèche</a></ul>
+                <ul><a href="./tousLesProduits.html" class="produitsCem">➤ CEM et Lycée</a></ul>
+                <ul><a href="./tousLesProduits.html" class="produitsPro">➤ Adultes et pro</a></ul>
+                <ul><a href="./tousLesProduits.html" class="produitsTrousse">➤ Trousse</a></ul>
+                <ul><a href="./tousLesProduits.html" class="produitsBureautique">➤ Bureautique</a></ul>
               </ul>
             </li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Apropos.html">À propos</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
           </ul>
         </div>
       </nav>
 
-      <div class="main-content">
-       
-    </div>  
+      <main class="apropos-main">
+    <section class="apropos-hero">
+      <h1>À propos de nous</h1>
+      <p class="apropos-lead">
+        Une expertise dans l’importation et la distribution
+      </p>
+      <p>
+        <strong>Verking</strong> est une société spécialisée dans l’importation et la vente en gros de fournitures bureautiques et de cartables pour tous les niveaux scolaires de la petite section au collège, sans oublier les étudiants et les adultes actifs.
+      </p>
+      <ul class="apropos-list">
+        <li>Des produits fiables et durables</li>
+        <li>Des prix compétitifs</li>
+        <li>Un service personnalisé pour nos clients institutionnels et revendeurs</li>
+      </ul>
+      <p>
+        Notre vision est de devenir une référence nationale dans le domaine des fournitures scolaires et bureautiques importées, en combinant innovation, qualité et disponibilité.
+      </p>
+    </section>
+
+    <hr class="apropos-separator">
+
+    <section class="apropos-block">
+      <h2><i class="ri-archive-2-line"></i> Nos produits</h2>
+      <p class="apropos-lead">Une large gamme adaptée à chaque besoin</p>
+      <div class="apropos-produits">
+        <div class="apropos-col">
+          <h3>🖇️ Fournitures de bureau</h3>
+          <ul>
+            <li>Stylos, crayons, feutres, marqueurs</li>
+            <li>Papiers (A4, A3, papiers spéciaux), blocs-notes, cahiers</li>
+            <li>Agrafeuses, perforatrices, colle, rubans adhésifs</li>
+            <li>Rangement : classeurs, porte-documents, corbeilles à courrier</li>
+            <li>Matériel d’organisation pour les entreprises et administrations</li>
+          </ul>
+        </div>
+        <div class="apropos-col">
+          <h3>🎒 Cartables et sacs</h3>
+          <ul>
+            <li><strong>Cartables pour l’école primaire</strong><br>
+              <span class="apropos-desc">Designs attrayants, ergonomie adaptée aux enfants, matériaux résistants</span>
+            </li>
+            <li><strong>Sacs pour collégiens (CEM)</strong><br>
+              <span class="apropos-desc">Solides, avec de grands compartiments, adaptés aux journées bien chargées</span>
+            </li>
+            <li><strong>Sacs pour adultes et professionnels</strong><br>
+              <span class="apropos-desc">Sacoches business, sacs à dos pour ordinateurs, modèles stylés et confortables</span>
+            </li>
+          </ul>
+          <p class="apropos-desc">
+            Nos cartables sont conçus pour allier praticité, style et durabilité, tout en répondant aux normes de confort pour la santé des utilisateurs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="apropos-separator">
+
+    <section class="apropos-block">
+      <h2><i class="ri-service-line"></i> Nos services</h2>
+      <p class="apropos-lead">Plus qu’un simple fournisseur</p>
+      <ul class="apropos-list">
+        <li>Importation directe des meilleures marques et fabricants</li>
+        <li>Vente en gros pour distributeurs, papeteries, écoles et institutions</li>
+        <li>Livraison rapide dans toutes les régions d’Algérie</li>
+        <li>Accompagnement commercial pour les commandes personnalisées ou les partenariats</li>
+        <li>Assistance après-vente et réactivité assurée</li>
+      </ul>
+      <p>
+        Nous offrons un service sur mesure adapté aux besoins spécifiques de chaque client.
+      </p>
+    </section>
+
+    <hr class="apropos-separator">
+
+    <section class="apropos-block apropos-choix">
+      <h2><i class="ri-checkbox-circle-line"></i> Pourquoi nous choisir ?</h2>
+      <ul class="apropos-list apropos-checks">
+        <li>✅ Large stock disponible toute l’année</li>
+        <li>✅ Produits rigoureusement sélectionnés</li>
+        <li>✅ Tarifs concurrentiels pour les professionnels</li>
+        <li>✅ Livraison fiable et ponctuelle</li>
+        <li>✅ Service client à l’écoute et réactif</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="../images/logo.png" alt="Logo Verking" />
+      <p>Verking, votre partenaire de confiance pour fournitures scolaires et bureautiques.</p>
+      <p class="footer-slogan">Qualité, fiabilité et service client au cœur de notre engagement.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="./tousLesProduits.html">Tous les produits</a></li>
+        <li><a href="../pages/Apropos.html">À propos</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="ri-map-pin-2-fill"></i> Alger, Algérie</p>
+      <p><i class="ri-phone-fill"></i> +213 123 456 789</p>
+      <p><i class="ri-mail-fill"></i> contact@verking.com</p>
+      <div class="footer-social">
+        <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+        <a href="https://wa.me/213123456789" target="_blank" aria-label="WhatsApp">
+          <i class="ri-whatsapp-fill"></i>
+        </a>
+        <a href="mailto:contact@verking.com" target="_blank" aria-label="Gmail">
+          <i class="ri-mail-fill"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    &copy; 2025 Verking. Tous droits réservés.
+  </div>
+</footer>
 </body>
 </html>

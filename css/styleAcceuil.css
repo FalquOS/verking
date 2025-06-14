@@ -651,7 +651,8 @@ body {
   .Welcome, .welcomeFleche, .Welcome-image-container {
     margin: 20px auto;
     width: 90%;
-    font-size: 1.5em;
+    font-size: 1em;
+    align-items: center;
   }
 
   .welcomeImage {
@@ -770,25 +771,53 @@ body {
   
 }
 
+
 @media (min-width: 1600px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-size: cover;
   }
   .main-content,
   .welcome-wrapper,
-  .description,
   .classIcone,
   .imageContainer,
   .rubanContainer,
   .site-footer .footer-container {
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    /* Garde la largeur d'origine, mais centre le bloc */
+    width: 100%;
   }
- 
+  .descriptionText{
+    margin-left: 4%;
+  }
+  .descriptionImage{
+    margin-right: 0%;
+   
+
+  }
+  .Welcome-image-container{
+    margin-left: 4%;
+  }
+  .Welcome,
+  .welcomeFleche{
+    margin-right: 0%;
+    max-width: 900px;
+  }
+  .classIcone1,
+  .classIcone2,
+  .classIcone3 {
+    margin-left: 2%;
+    margin-right: 0 !important;
+    width: 30%;
+    min-width: 350px;
+    max-width: 450px;
+    display: inline-block;
+  }
+  .imageContainer .image img {
+    max-width: 350px;
+    height: auto;
+  }
 }
-
-
