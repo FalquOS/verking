@@ -1,173 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verking</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styleAcceuil.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Verking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styleAcceuil.css">
 </head>
-<body>  
-   
-    <nav class="navbar">
-        <div class="nav-container">
-          <a href="#" class="logo">
-            <img src="./images/logo2.png" alt="Logo" style="height: 50px;">
-          </a>
-          <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
-            <li class="dropdown-parent">
-              <a href="#">Catégories</a>
-              <ul class="dropdown">
-                <ul><a href="./pages/tousLesProduits.html" class="produitsEnfant">➤ Primaire et crèche</a></ul>
-                <ul><a href="./pages/tousLesProduits.html" class="produitsCem">➤ CEM et Lycée</a></ul>
-                <ul><a href="./pages/tousLesProduits.html" class="produitsPro">➤ Adultes et pro</a></ul>
-                <ul><a href="./pages/tousLesProduits.html" class="produitsTrousse">➤ Trousse</a></ul>
-                <ul><a href="./pages/tousLesProduits.html" class="produitsBureautique">➤ Bureautique</a></ul>
-              </ul>
-            </li>
-            <li><a href="./pages/Apropos.html">À propos</a></li>
-            <li><a href="./pages/Contact.html">Contact</a></li>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="./images/logo2.png" alt="Logo Verking">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
+        <li class="dropdown-parent">
+          <a href="#">Catégories</a>
+          <ul class="dropdown">
+            <li><a href="./pages/tousLesProduits.html">➤ Primaire et crèche</a></li>
+            <li><a href="./pages/tousLesProduits.html">➤ CEM et Lycée</a></li>
+            <li><a href="./pages/tousLesProduits.html">➤ Adultes et pro</a></li>
+            <li><a href="./pages/tousLesProduits.html">➤ Trousse</a></li>
+            <li><a href="./pages/tousLesProduits.html">➤ Bureautique</a></li>
           </ul>
-        </div>
-      </nav>
-
-      <div class="main-content">
-        <div class="Welcome-wrapper">
-        <div class="Welcome1">
-           <div class="Welcome">
-            <h1> Bienvenue chez Verking <br>
-                Votre partenaire de confiance 
-                pour l’importation de fournitures 
-                 bureautiques et de cartables scolaires
-            </h1>
-            </div>
-            <div class="welcomeFleche">
-              <h1><a href="./pages/tousLesProduits.html"> Decouvrez notre collection ➜ </a></h1>
-            </div>
-        </div>
-
-        <div class="Welcome-image-container">
-            <image src="./images/Wlecome1.png" class="welcomeImage img1"  alt="Soyez les bienvenus"></image>
-            <image src="./images/Welcome2.png" class="welcomeImage img2"  alt="Soyez les bienvenus"></image>
-        </div>
-      </div>
-
-      <div class="description">
-        <div class="descriptionText">
-          <h2>
-             ✦Depuis notre création, nous nous engageons à offrir des produits de qualités supérieures ✦, importés des meilleurs fournisseurs internationaux 🌍, pour répondre aux besoins des élèves 👨‍🎓, enseignants 👩‍🏫, professionnels 👨‍💼 et commerçants 🧑‍💼 à travers toute l’Algérie. 
-          </h2>
-        </div>
-        <div class="descriptionImage">
-          <img src="./images/logo.png" class="descriptionImage1">
-        </div>
-      </div>
-
-      <br>
-      <br>
-      <br>
-      <div class="IconeQuestion"> <h1> <strong>Pourquoi Nous choisir ?</strong></h1> </div>
-      <div class="classIcone">
-        <div class="classIcone1">
-          <h1> <br>  Haute Qualite  <br></h1>
-          <h3>Produits rigoureusement sélectionnés pour une qualité irréprochable. <br></h3>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
-        </div>
-        <div class="classIcone2">
-          <h1><br> Prix abordable <br></h1>
-          <h3>Des prixs compétitifs accessibles à tous les budgets.</h3>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
-        </div>
-        <div class="classIcone3">
-          <h1><br>Confiance<br> </h1>
-          <h3>Une relation fondée sur la transparence, la fiabilité et la satisfaction client.</h3>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus </a></div>
-        </div>
-      </div>
-      <div class="imageContainer">
-      <div class="image">
-        <img src="./images/produit1.png">
-      </div>
-      <div class="image">
-        <img src="./images/produit2.png" >
-      </div>
-      <div class="image">
-        <img src="./images/Wlecome1.png">
-      </div>
-      <div class="image">
-        <img src="./images/produit4.png" >
-      </div>
-       <div class="image">
-        <img src="./images/produit5.png">
-      </div>
-      <div class="image">
-        <img src="./images/produit6.png">
-      </div>
-      <div class="image">
-        <img src="./images/produit7.png" >
-      </div>
-      <div class="image">
-        <img src="./images/produit8.png">
-      </div>
-      <div class="imageLink">
-        <a href="./pages/tousLesProduits.html">Voir tous les produits</a>
-      </div>
+        </li>
+        <li><a href="./pages/Apropos.html">À propos</a></li>
+        <li><a href="./pages/Contact.html">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+  <!-- Bouton burger -->
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+      </button>
 
-    <div class="ruban">
-      <div class="rubanContainer">
-      <img src="./images/ruban.png" alt="ruban"  class="ruban1" >
-      <p class="rubanText">Verking, l’alliance de la qualité internationale et de la proximité locale pour vos besoins en fournitures scolaires et de bureau </p>
-      </div>
-      <div class="rubanImage"><img src="./images/logo.png" ></div>
-    </div>
-    <footer class="site-footer">
-  <div class="footer-container">
-    <div class="footer-brand">
-      <img src="./images/logoBg.png" alt="Logo Verking" />
-      <p>Verking, votre partenaire de confiance pour fournitures scolaires et bureautiques.</p>
-      <p class="footer-slogan">Qualité, fiabilité et service client au cœur de notre engagement.</p>
-    </div>
-    <div class="footer-links">
-      <h4>Liens utiles</h4>
+      <!-- Aside menu -->
+      <aside class="side-menu" id="sideMenu">
+      <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
       <ul>
         <li><a href="./index.html">Accueil</a></li>
         <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
+        <li><a href="./pages/tousLesProduits.html">Catégories</a></li>
         <li><a href="./pages/Apropos.html">À propos</a></li>
         <li><a href="./pages/Contact.html">Contact</a></li>
-        <li><a href="#">FAQ</a></li>
       </ul>
+      </aside>
+      <script src="./js/asideAjustement.js"></script>
+
+  <div class="main-content">
+    <section class="welcome-section">
+      <h1> Soyez les Bienvenues chez </h1>
+      <img src="./images/logoBg.png" alt="Verking">
+      <div class="welcome-lead">
+        Votre partenaire de confiance pour l’importation de fournitures bureautiques et de cartables scolaires
+      </div>
+      <div class="welcome-desc">
+        Depuis notre création, nous nous engageons à offrir des produits de qualité supérieure, importés des meilleurs fournisseurs internationaux, pour répondre aux besoins des élèves, enseignants, professionnels et commerçants à travers toute l’Algérie.
+      </div>
+      <div class="classIcones">
+        <div class="classIcone">
+          <h1> <br>  Haute Qualite  <br></h1>
+          <p>Produits rigoureusement sélectionnés pour une qualité irréprochable. <br></p>
+          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
+        </div>
+        <div class="classIcone">
+          <h1><br> Prix abordable <br></h1>
+          <p>Des prixs compétitifs accessibles à tous les budgets.</p>
+          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
+        </div>
+        <div class="classIcone">
+          <h1><br>Confiance<br> </h1>
+          <p>Une relation fondée sur la transparence,  la fiabilité et la satisfaction client.</p>
+          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus </a></div>
+        </div>
+      </div>
+    </section>
+   <!-- Phrase d'advertisement moderne -->
+<div class="ad-banner">
+  <i class="ri-flashlight-fill"></i>
+  Profitez de la qualité Verking et faites la différence dans votre quotidien !
+  <i class="ri-star-smile-fill"></i>
+</div>
+    
+    <div class="images-row">
+      <div class="image-card">
+        <img src="./images/produit1.png" alt="Stylos et fournitures">
+        <div class="image-title">Cartables et portes PC</div>
+      </div>
+      <div class="image-card">
+        <img src="./images/produit2.png" alt="Cartable scolaire">
+        <div class="image-title">Cartables scolaires</div>
+      </div>
+      <div class="image-card">
+        <img src="./images/produit6.png" alt="Accessoires">
+        <div class="image-title">Accessoires & organisation</div>
+      </div>
     </div>
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p><i class="ri-map-pin-2-fill"></i> Alger, Algérie</p>
-      <p><i class="ri-phone-fill"></i> +213 554 86 10 62 <br> +213 661 28 46 71</p>
-      <p><i class="ri-mail-fill"></i> contact@verking.com</p>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/share/1DFcwbsrPF/" target="_blank" aria-label="Facebook">
-          <i class="ri-facebook-circle-fill"></i>
-        </a>
-        <a href="#" target="_blank" aria-label="WhatsApp">
-          <i class="ri-whatsapp-fill"></i>
-        </a>
-        <a href="#" target="_blank" aria-label="Gmail">
-          <i class="ri-mail-fill"></i>
-        </a>
+    <div class="welcome">
+      <div class="welcome-ad">
+         <a href="./pages/tousLesProduits.html" >Découvrez la différence Verking : qualité, prix, service et proximité ! 🎉</a>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
-    &copy; 2025 Verking. Tous droits réservés.
-  </div>
-</footer>
-    </div>  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="./images/logoBg.png" alt="Logo Verking" />
+        <p>Verking, votre partenaire de confiance pour fournitures scolaires et bureautiques.</p>
+        <p class="footer-slogan">Qualité, fiabilité et service client au cœur de notre engagement.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
+          <li><a href="./pages/Apropos.html">À propos</a></li>
+          <li><a href="./pages/Contact.html">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="ri-map-pin-2-fill"></i> Alger, Algérie</p>
+        <p><i class="ri-phone-fill"></i> +213 554 86 10 62 <br> +213 661 28 46 71</p>
+        <p><i class="ri-mail-fill"></i> VerkingStationery@gmail.com</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1DFcwbsrPF/" target="_blank" aria-label="Facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="WhatsApp">
+            <i class="ri-whatsapp-fill"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Gmail">
+            <i class="ri-mail-fill"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; 2025 Verking. Tous droits réservés.
+    </div>
+  </footer>
 </body>
 </html>
