@@ -3,16 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Verking</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/styleContact.css">
+  <meta name="description" content="Contactez Verking pour vos fournitures scolaires et bureautiques en Algérie. Commandes pour écoles, entreprises et revendeurs à Alger.">
+  <meta name="keywords" content="Verking, fournitures scolaires Algérie, papeterie Alger, matériel bureau Alger, contact Verking">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact | Verking - Fournitures Scolaires et Bureautiques">
+  <meta property="og:description" content="Contactez Verking pour vos besoins en fournitures scolaires et bureautiques en Algérie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.verking.com/pages/Contact.html">
+  <meta property="og:image" content="https://www.verking.com/images/logo.png">
+  <link rel="canonical" href="https://www.verking.com/pages/Contact.html">
+  
+  <title>Contact | Verking - Fournitures Scolaires et Bureautiques en Algérie</title>
+  
+  <!-- Preload important resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="../css/styleContact.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleContact.css">
+  </noscript>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  
+  <!-- Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Verking",
+      "image": "https://www.verking.com/images/logo.png",
+      "@id": "https://www.verking.com",
+      "url": "https://www.verking.com",
+      "telephone": "+213554861062",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dar El Beïda",
+        "addressLocality": "Alger",
+        "addressCountry": "DZ"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1DFcwbsrPF/"
+      ]
+    }
+  </script>
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Navigation principale">
     <div class="nav-container">
-      <a href="../index.html" class="logo">
-        <img src="../images/logo.png" alt="Logo Verking">
+      <a href="../index.html" class="logo" aria-label="Accueil Verking">
+        <img src="../images/logo.png" alt="Logo Verking - Fournitures scolaires et bureautiques" width="120" height="40">
       </a>
       <ul class="nav-links">
         <li><a href="../index.html">Accueil</a></li>
@@ -20,11 +77,11 @@
         <li class="dropdown-parent">
           <a href="#">Catégories</a>
           <ul class="dropdown">
-            <li><a href="./tousLesProduits.html">➤ Primaire et crèche</a></li>
-            <li><a href="./tousLesProduits.html">➤ CEM et Lycée</a></li>
-            <li><a href="./tousLesProduits.html">➤ Adultes et pro</a></li>
-            <li><a href="./tousLesProduits.html">➤ Trousse</a></li>
-            <li><a href="./tousLesProduits.html">➤ Bureautique</a></li>
+            <li><a href="./tousLesProduits.html?category=primaire">➤ Primaire et crèche</a></li>
+            <li><a href="./tousLesProduits.html?category=cem">➤ CEM et Lycée</a></li>
+            <li><a href="./tousLesProduits.html?category=adultes">➤ Adultes et pro</a></li>
+            <li><a href="./tousLesProduits.html?category=trousse">➤ Trousse</a></li>
+            <li><a href="./tousLesProduits.html?category=bureautique">➤ Bureautique</a></li>
           </ul>
         </li>
         <li><a href="Apropos.html">À propos</a></li>
@@ -32,23 +89,24 @@
       </ul>
     </div>
   </nav>
+  
   <!-- Bouton burger -->
-      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
-      <span></span><span></span><span></span>
-      </button>
+  <button class="burger-btn" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
-      <!-- Aside menu -->
-      <aside class="side-menu" id="sideMenu">
-      <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../pages/tousLesProduits.html">Tous les produits</a></li>
-        <li><a href="../pages/tousLesProduits.html">Catégories</a></li>
-        <li><a href="../pages/Apropos.html">À propos</a></li>
-        <li><a href="../pages/Contact.html">Contact</a></li>
-      </ul>
-      </aside>
-      <script src="../js/asideAjustement.js"></script>
+  <!-- Aside menu -->
+  <aside class="side-menu" id="sideMenu" aria-hidden="true">
+    <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="../pages/tousLesProduits.html">Tous les produits</a></li>
+      <li><a href="../pages/tousLesProduits.html">Catégories</a></li>
+      <li><a href="../pages/Apropos.html">À propos</a></li>
+      <li><a href="../pages/Contact.html">Contact</a></li>
+    </ul>
+  </aside>
+  <script src="../js/asideAjustement.js" defer></script>
 
   <main class="contact-main">
     <section class="contact-hero">

@@ -1,118 +1,228 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Essential Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil | Verking</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Verking - Fournitures Scolaires et Bureautiques de Qualité en Algérie</title>
+  <meta name="description" content="Verking, importateur de fournitures scolaires et bureautiques en Algérie. Cartables, trousses, matériel de bureau de qualité supérieure à prix compétitifs. Livraison dans toute l'Algérie.">
+  <meta name="keywords" content="fournitures scolaires Algérie, cartables scolaires, bureautique Alger, fournitures bureau, cartables enfants, trousses scolaires, matériel scolaire qualité, importateur fournitures Algérie">
+  <meta name="author" content="Verking">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Media -->
+  <meta property="og:title" content="Verking - Fournitures Scolaires et Bureautiques de Qualité">
+  <meta property="og:description" content="Découvrez notre gamme complète de fournitures scolaires et bureautiques importées. Qualité supérieure, prix compétitifs, service client exceptionnel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://verking.dz">
+  <meta property="og:image" content="./images/logoBg.png">
+  <meta property="og:locale" content="fr_DZ">
+  <meta property="og:site_name" content="Verking">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Verking - Fournitures Scolaires et Bureautiques">
+  <meta name="twitter:description" content="Votre partenaire de confiance pour l'importation de fournitures bureautiques et scolaires en Algérie.">
+  <meta name="twitter:image" content="./images/logoBg.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://verking.dz/">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styleAcceuil.css">
+  
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Verking",
+    "description": "Importateur de fournitures scolaires et bureautiques de qualité en Algérie",
+    "url": "https://verking.dz",
+    "logo": "https://verking.dz/images/logoBg.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+213-554-86-10-62",
+      "contactType": "customer service",
+      "areaServed": "DZ",
+      "availableLanguage": ["French", "Arabic"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alger",
+      "addressCountry": "DZ"
+    },
+    "sameAs": [
+      "https://www.facebook.com/share/1DFcwbsrPF/"
+    ]
+  }
+  </script>
+  
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Verking",
+    "image": "https://verking.dz/images/logoBg.png",
+    "description": "Magasin spécialisé dans l'importation et la vente de fournitures scolaires et bureautiques de qualité supérieure en Algérie.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alger",
+      "addressCountry": "Algeria"
+    },
+    "telephone": "+213-554-86-10-62",
+    "email": "VerkingStationery@gmail.com",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="./images/logo2.png" alt="Logo Verking">
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
-        <li class="dropdown-parent">
-          <a href="#">Catégories</a>
-          <ul class="dropdown">
-            <li><a href="./pages/tousLesProduits.html">➤ Primaire et crèche</a></li>
-            <li><a href="./pages/tousLesProduits.html">➤ CEM et Lycée</a></li>
-            <li><a href="./pages/tousLesProduits.html">➤ Adultes et pro</a></li>
-            <li><a href="./pages/tousLesProduits.html">➤ Trousse</a></li>
-            <li><a href="./pages/tousLesProduits.html">➤ Bureautique</a></li>
-          </ul>
-        </li>
-        <li><a href="./pages/Apropos.html">À propos</a></li>
-        <li><a href="./pages/Contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Bouton burger -->
-      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+  
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <div class="nav-container">
+        <a href="index.html" class="logo" aria-label="Accueil Verking">
+          <img src="./images/logo2.png" alt="Logo Verking - Fournitures scolaires et bureautiques" width="120" height="60">
+        </a>
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="index.html" class="active" role="menuitem" aria-current="page">Accueil</a></li>
+          <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">Tous les produits</a></li>
+          <li class="dropdown-parent" role="none">
+            <a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false">Catégories</a>
+            <ul class="dropdown" role="menu" aria-label="Sous-menu catégories">
+              <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">➤ Primaire et crèche</a></li>
+              <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">➤ CEM et Lycée</a></li>
+              <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">➤ Adultes et pro</a></li>
+              <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">➤ Trousse</a></li>
+              <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">➤ Bureautique</a></li>
+            </ul>
+          </li>
+          <li role="none"><a href="./pages/Apropos.html" role="menuitem">À propos</a></li>
+          <li role="none"><a href="./pages/Contact.html" role="menuitem">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span><span></span><span></span>
-      </button>
+    </button>
 
-      <!-- Aside menu -->
-      <aside class="side-menu" id="sideMenu">
-      <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
-      <ul>
-        <li><a href="./index.html">Accueil</a></li>
-        <li><a href="./pages/tousLesProduits.html">Tous les produits</a></li>
-        <li><a href="./pages/tousLesProduits.html">Catégories</a></li>
-        <li><a href="./pages/Apropos.html">À propos</a></li>
-        <li><a href="./pages/Contact.html">Contact</a></li>
+    <aside class="side-menu" id="sideMenu" aria-label="Menu de navigation mobile">
+      <button class="close-aside" id="closeAside" aria-label="Fermer le menu">&times;</button>
+      <ul role="menu">
+        <li role="none"><a href="./index.html" role="menuitem">Accueil</a></li>
+        <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">Tous les produits</a></li>
+        <li role="none"><a href="./pages/tousLesProduits.html" role="menuitem">Catégories</a></li>
+        <li role="none"><a href="./pages/Apropos.html" role="menuitem">À propos</a></li>
+        <li role="none"><a href="./pages/Contact.html" role="menuitem">Contact</a></li>
       </ul>
-      </aside>
-      <script src="./js/asideAjustement.js"></script>
+    </aside>
+  </header>
 
-  <div class="main-content">
-    <section class="welcome-section">
-      <h1> Soyez les Bienvenues chez </h1>
-      <img src="./images/logoBg.png" alt="Verking">
+  <main id="main-content" class="main-content" role="main">
+    <section class="welcome-section" aria-labelledby="welcome-heading">
+      <h1 id="welcome-heading">Soyez les Bienvenues chez Verking</h1>
+      <img src="./images/logoBg.png" alt="Logo Verking - Spécialiste fournitures scolaires Algérie" width="300" height="150">
+      
       <div class="welcome-lead">
-        Votre partenaire de confiance pour l’importation de fournitures bureautiques et de cartables scolaires
+        <h2>Votre partenaire de confiance pour l'importation de fournitures bureautiques et de cartables scolaires</h2>
       </div>
+      
       <div class="welcome-desc">
-        Depuis notre création, nous nous engageons à offrir des produits de qualité supérieure, importés des meilleurs fournisseurs internationaux, pour répondre aux besoins des élèves, enseignants, professionnels et commerçants à travers toute l’Algérie.
+        <p>Depuis notre création, nous nous engageons à offrir des produits de qualité supérieure, importés des meilleurs fournisseurs internationaux, pour répondre aux besoins des élèves, enseignants, professionnels et commerçants à travers toute l'Algérie.</p>
       </div>
-      <div class="classIcones">
-        <div class="classIcone">
-          <h1> <br>  Haute Qualite  <br></h1>
-          <p>Produits rigoureusement sélectionnés pour une qualité irréprochable. <br></p>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
-        </div>
-        <div class="classIcone">
-          <h1><br> Prix abordable <br></h1>
-          <p>Des prixs compétitifs accessibles à tous les budgets.</p>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus</a></div>
-        </div>
-        <div class="classIcone">
-          <h1><br>Confiance<br> </h1>
-          <p>Une relation fondée sur la transparence,  la fiabilité et la satisfaction client.</p>
-          <div class="Voir Plus"><a href="./pages/Apropos.html">Voir Plus </a></div>
-        </div>
+      
+      <div class="classIcones" role="region" aria-label="Nos avantages">
+        <article class="classIcone">
+          <h3>Haute Qualité</h3>
+          <p>Produits rigoureusement sélectionnés pour une qualité irréprochable.</p>
+          <div class="Voir Plus">
+            <a href="./pages/Apropos.html" aria-label="En savoir plus sur notre qualité">Voir Plus</a>
+          </div>
+        </article>
+        
+        <article class="classIcone">
+          <h3>Prix Abordables</h3>
+          <p>Des prix compétitifs accessibles à tous les budgets.</p>
+          <div class="Voir Plus">
+            <a href="./pages/Apropos.html" aria-label="En savoir plus sur nos prix">Voir Plus</a>
+          </div>
+        </article>
+        
+        <article class="classIcone">
+          <h3>Confiance</h3>
+          <p>Une relation fondée sur la transparence, la fiabilité et la satisfaction client.</p>
+          <div class="Voir Plus">
+            <a href="./pages/Apropos.html" aria-label="En savoir plus sur notre engagement">Voir Plus</a>
+          </div>
+        </article>
       </div>
     </section>
-   <!-- Phrase d'advertisement moderne -->
-<div class="ad-banner">
-  <i class="ri-flashlight-fill"></i>
-  Profitez de la qualité Verking et faites la différence dans votre quotidien !
-  <i class="ri-star-smile-fill"></i>
-</div>
+
+    <!-- Call-to-action banner -->
+    <section class="ad-banner" role="banner" aria-label="Promotion spéciale">
+      <i class="ri-flashlight-fill" aria-hidden="true"></i>
+      Profitez de la qualité Verking et faites la différence dans votre quotidien !
+      <i class="ri-star-smile-fill" aria-hidden="true"></i>
+    </section>
     
-    <div class="images-row">
-      <div class="image-card">
-        <img src="./images/produit1.png" alt="Stylos et fournitures">
-        <div class="image-title">Cartables et portes PC</div>
-      </div>
-      <div class="image-card">
-        <img src="./images/produit2.png" alt="Cartable scolaire">
-        <div class="image-title">Cartables scolaires</div>
-      </div>
-      <div class="image-card">
-        <img src="./images/produit6.png" alt="Accessoires">
-        <div class="image-title">Accessoires & organisation</div>
-      </div>
-    </div>
-    <div class="welcome">
+    <section class="images-row" aria-labelledby="products-heading">
+      <h2 id="products-heading" class="sr-only" style="display:none">Nos catégories de produits</h2>
+      
+      <article class="image-card">
+        <img src="./images/produit1.png" alt="Cartables et portes PC - Collection Verking" width="300" height="200" loading="lazy">
+        <h3 class="image-title">Cartables et portes PC</h3>
+      </article>
+      
+      <article class="image-card">
+        <img src="./images/produit2.png" alt="Cartables scolaires pour enfants - Verking" width="300" height="200" loading="lazy">
+        <h3 class="image-title">Cartables scolaires</h3>
+      </article>
+      
+      <article class="image-card">
+        <img src="./images/produit6.png" alt="Accessoires et organisation bureautique - Verking" width="300" height="200" loading="lazy">
+        <h3 class="image-title">Accessoires & organisation</h3>
+      </article>
+    </section>
+    
+    <section class="welcome" role="region" aria-label="Appel à l'action">
       <div class="welcome-ad">
-         <a href="./pages/tousLesProduits.html" >Découvrez la différence Verking : qualité, prix, service et proximité ! 🎉</a>
+        <a href="./pages/tousLesProduits.html" class="cta-button" aria-label="Découvrir tous nos produits">
+          Découvrez la différence Verking : qualité, prix, service et proximité ! 🎉
+        </a>
       </div>
-    </div>
-  </div>
-  <footer class="site-footer">
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
     <div class="footer-container">
       <div class="footer-brand">
-        <img src="./images/logoBg.png" alt="Logo Verking" />
+        <img src="./images/logoBg.png" alt="Logo Verking" width="150" height="75">
         <p>Verking, votre partenaire de confiance pour fournitures scolaires et bureautiques.</p>
         <p class="footer-slogan">Qualité, fiabilité et service client au cœur de notre engagement.</p>
       </div>
-      <div class="footer-links">
+      
+      <nav class="footer-links" aria-label="Liens du site">
         <h4>Liens utiles</h4>
         <ul>
           <li><a href="./index.html">Accueil</a></li>
@@ -121,28 +231,52 @@
           <li><a href="./pages/Contact.html">Contact</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
-      </div>
+      </nav>
+      
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p><i class="ri-map-pin-2-fill"></i> Alger, Algérie</p>
-        <p><i class="ri-phone-fill"></i> +213 554 86 10 62 <br> +213 661 28 46 71</p>
-        <p><i class="ri-mail-fill"></i> VerkingStationery@gmail.com</p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/share/1DFcwbsrPF/" target="_blank" aria-label="Facebook">
-            <i class="ri-facebook-circle-fill"></i>
+        <address>
+          <p><i class="ri-map-pin-2-fill" aria-hidden="true"></i> Alger, Algérie</p>
+          <p><i class="ri-phone-fill" aria-hidden="true"></i> 
+            <a href="tel:+213554861062">+213 554 86 10 62</a><br>
+            <a href="tel:+213661284671">+213 661 28 46 71</a>
+          </p>
+          <p><i class="ri-mail-fill" aria-hidden="true"></i> 
+            <a href="mailto:VerkingStationery@gmail.com">VerkingStationery@gmail.com</a>
+          </p>
+        </address>
+        
+        <div class="footer-social" role="navigation" aria-label="Réseaux sociaux">
+          <a href="https://www.facebook.com/share/1DFcwbsrPF/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
+            <i class="ri-facebook-circle-fill" aria-hidden="true"></i>
           </a>
-          <a href="#" target="_blank" aria-label="WhatsApp">
-            <i class="ri-whatsapp-fill"></i>
+          <a href="https://wa.me/213554861062" target="_blank" rel="noopener noreferrer" aria-label="Contactez-nous sur WhatsApp">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i>
           </a>
-          <a href="#" target="_blank" aria-label="Gmail">
-            <i class="ri-mail-fill"></i>
+          <a href="mailto:VerkingStationery@gmail.com" aria-label="Envoyez-nous un email">
+            <i class="ri-mail-fill" aria-hidden="true"></i>
           </a>
         </div>
       </div>
     </div>
+    
     <div class="footer-copyright">
-      &copy; 2025 Verking. Tous droits réservés.
+      <p>&copy; 2025 Verking. Tous droits réservés. | 
+      <a href="/sitemap.xml">Plan du site</a> | 
+      <a href="/mentions-legales">Mentions légales</a></p>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="./js/asideAjustement.js"></script>
+  
+  <!-- Google Analytics (à remplacer par votre ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
 </body>
 </html>

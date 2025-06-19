@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verking</title>
+    <meta name="description" content="Découvrez Verking, importateur et distributeur de fournitures scolaires et bureautiques en Algérie. Produits de qualité pour écoles, entreprises et revendeurs.">
+    <meta name="keywords" content="Verking, fournitures scolaires Algérie, cartables Alger, papeterie bureau, importateur fournitures, grossiste scolaire">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="À propos de Verking | Fournitures Scolaires et Bureautiques en Algérie">
+    <meta property="og:description" content="Importateur et distributeur de fournitures scolaires et bureautiques de qualité en Algérie.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.verking.com/pages/Apropos.html">
+    <meta property="og:image" content="https://www.verking.com/images/logo.png">
+    <link rel="canonical" href="https://www.verking.com/pages/Apropos.html">
+    
+    <title>À propos de Verking | Importateur Fournitures Scolaires & Bureautiques en Algérie</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="{% static 'css/bootstrap.min.css' %}" as="style">
+    <link rel="preload" href="{% static 'css/styles.css' %}" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styleApropos.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Verking",
+      "url": "https://www.verking.com",
+      "logo": "https://www.verking.com/images/logo.png",
+      "description": "Importateur et distributeur de fournitures scolaires et bureautiques en Algérie",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Alger",
+        "addressCountry": "DZ"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+213554861062",
+        "contactType": "customer service",
+        "email": "VerkingStationery@gmail.com",
+        "availableLanguage": "French"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1DFcwbsrPF/"
+      ]
+    }
+    </script>
 </head>
-<body>  
-   
-    <nav class="navbar">
+<body>
+    <nav class="navbar" aria-label="Navigation principale">
         <div class="nav-container">
-          <a href="#" class="logo">
-            <img src="../images/logo.png" alt="Logo" style="height: 50px;">
-          </a>
-          <ul class="nav-links">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="./tousLesProduits.html">Tous les produits</a></li>
-            <li class="dropdown-parent">
-              <a href="./tousLesProduits.html">Catégories</a>
-              <ul class="dropdown">
-                <ul><a href="./tousLesProduits.html" class="produitsEnfant">➤ Primaire et crèche</a></ul>
-                <ul><a href="./tousLesProduits.html" class="produitsCem">➤ CEM et Lycée</a></ul>
-                <ul><a href="./tousLesProduits.html" class="produitsPro">➤ Adultes et pro</a></ul>
-                <ul><a href="./tousLesProduits.html" class="produitsTrousse">➤ Trousse</a></ul>
-                <ul><a href="./tousLesProduits.html" class="produitsBureautique">➤ Bureautique</a></ul>
-              </ul>
-            </li>
-            <li><a href="Apropos.html">À propos</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
-          </ul>
+            <a href="../index.html" class="logo" aria-label="Accueil Verking">
+                <img src="../images/logo.png" alt="Logo Verking - Importateur fournitures scolaires et bureautiques Algérie" width="150" height="50" loading="eager">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./tousLesProduits.html">Tous les produits</a></li>
+                <li class="dropdown-parent">
+                    <a href="./tousLesProduits.html">Catégories</a>
+                    <ul class="dropdown">
+                        <li><a href="./tousLesProduits.html?category=primaire" class="produitsEnfant">➤ Primaire et crèche</a></li>
+                        <li><a href="./tousLesProduits.html?category=cem" class="produitsCem">➤ CEM et Lycée</a></li>
+                        <li><a href="./tousLesProduits.html?category=adultes" class="produitsPro">➤ Adultes et pro</a></li>
+                        <li><a href="./tousLesProduits.html?category=trousse" class="produitsTrousse">➤ Trousse</a></li>
+                        <li><a href="./tousLesProduits.html?category=bureautique" class="produitsBureautique">➤ Bureautique</a></li>
+                    </ul>
+                </li>
+                <li><a href="Apropos.html" class="active">À propos</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
         </div>
-      </nav>
-      <!-- Bouton burger -->
-      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
-      <span></span><span></span><span></span>
-      </button>
+    </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button class="burger-btn" id="burgerBtn" aria-label="Menu" aria-expanded="false" aria-controls="sideMenu">
+        <span></span><span></span><span></span>
+    </button>
 
-      <!-- Aside menu -->
-      <aside class="side-menu" id="sideMenu">
-      <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../pages/tousLesProduits.html">Tous les produits</a></li>
-        <li><a href="../pages/tousLesProduits.html">Catégories</a></li>
-        <li><a href="../pages/Apropos.html">À propos</a></li>
-        <li><a href="../pages/Contact.html">Contact</a></li>
-      </ul>
-      </aside>
-      <script src="../js/asideAjustement.js"></script>
+    <!-- Mobile Menu -->
+    <aside class="side-menu" id="sideMenu" aria-hidden="true">
+        <button class="close-aside" id="closeAside" aria-label="Fermer le menu">&times;</button>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../pages/tousLesProduits.html">Tous les produits</a></li>
+            <li><a href="../pages/tousLesProduits.html">Catégories</a></li>
+            <li><a href="../pages/Apropos.html">À propos</a></li>
+            <li><a href="../pages/Contact.html">Contact</a></li>
+        </ul>
+    </aside>
+    <script src="../js/asideAjustement.js" defer></script>
 
       <main class="apropos-main">
     <section class="apropos-hero">
