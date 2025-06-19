@@ -327,6 +327,7 @@ body {
       text-align: center;
     }
     .footer-social a {
+      text-decoration: none;
       color: #fff;
       transition: color 0.2s;
     }

@@ -194,6 +194,7 @@ body {
 }
 
 .contact-social a {
+  text-decoration: none;
   color: #b10707;
   transition: color 0.2s;
 }
@@ -341,6 +342,7 @@ body {
       text-align: center;
     }
     .footer-social a {
+      text-decoration: none;
       color: #fff;
       transition: color 0.2s;
     }
@@ -474,10 +476,14 @@ body {
   .logo-container > * {
     align-items: center;
     width: 100%;
+    padding: 20px 5px 40px 5px;
   }
 
   .contact-info {
-    align-items: center;
-    width: 90%;
+    justify-content: stretch;
+    max-width: 90%;
+  }
+  .contact-info p {
+    max-width: 90%;
   }
 }

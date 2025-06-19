@@ -349,6 +349,7 @@ body {
       text-align: center;
     }
     .footer-social a {
+      text-decoration: none;
       color: #fff;
       transition: color 0.2s;
     }
@@ -472,5 +473,8 @@ body {
   }
   .images-title {
     font-size: 1.3em;
+  }
+  .images-grid {
+     padding: 20px 15px 40px 15px;
   }
 }
