@@ -1,53 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- Essential Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galerie d’images | Verking</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Tous les Produits - Fournitures Scolaires et Bureautiques | Verking Algérie</title>
+  <meta name="description" content="Découvrez notre collection complète de fournitures scolaires et bureautiques : cartables, trousses, stylos, cahiers, matériel de bureau. Plus de 40 produits de qualité importés pour l'Algérie.">
+  <meta name="keywords" content="catalogue fournitures scolaires, tous les produits Verking, cartables Algérie, bureautique Alger, collection scolaire, matériel bureau, fournitures complètes, produits importés Algérie">
+  <meta name="author" content="Verking">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Collection Complète - Fournitures Scolaires et Bureautiques Verking">
+  <meta property="og:description" content="Explorez notre gamme complète de plus de 40 produits : cartables, trousses, fournitures scolaires et bureautiques de qualité supérieure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://verking.dz/pages/tousLesProduits.html">
+  <meta property="og:image" content="../images/produit1.png">
+  <meta property="og:locale" content="fr_DZ">
+  <meta property="og:site_name" content="Verking">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Collection Verking - Fournitures Scolaires et Bureautiques">
+  <meta name="twitter:description" content="Plus de 40 produits de qualité pour l'école et le bureau en Algérie.">
+  <meta name="twitter:image" content="../images/produit1.png">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://verking.dz/pages/tousLesProduits.html">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styleTousLesProduits.css">
+  
+  <!-- Structured Data - Product Collection -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Collection Verking - Fournitures Scolaires et Bureautiques",
+    "description": "Collection complète de fournitures scolaires et bureautiques importées de qualité supérieure pour l'Algérie",
+    "url": "https://verking.dz/pages/tousLesProduits.html",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": "40+",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Cartables et Portes PC",
+          "category": "Cartables",
+          "brand": "Verking"
+        },
+        {
+          "@type": "Product", 
+          "name": "Cartables Scolaires",
+          "category": "Fournitures Scolaires",
+          "brand": "Verking"
+        },
+        {
+          "@type": "Product",
+          "name": "Trousses et Accessoires",
+          "category": "Trousses",
+          "brand": "Verking"
+        }
+      ]
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://verking.dz"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tous les produits",
+          "item": "https://verking.dz/pages/tousLesProduits.html"
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="../index.html" class="logo">
-        <img src="../images/logo.png" alt="Logo Verking">
-      </a>
-      <ul class="nav-links">
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="./tousLesProduits.html">Tous les produits</a></li>
-        <li class="dropdown-parent">
-          <a href="./tousLesProduits.html">Catégories</a>
-          <ul class="dropdown">
-            <li><a href="./tousLesProduits.html">➤ Primaire et crèche</a></li>
-            <li><a href="./tousLesProduits.html">➤ CEM et Lycée</a></li>
-            <li><a href="./tousLesProduits.html">➤ Adultes et pro</a></li>
-            <li><a href="./tousLesProduits.html">➤ Trousse</a></li>
-            <li><a href="./tousLesProduits.html">➤ Bureautique</a></li>
-          </ul>
-        </li>
-        <li><a href="Apropos.html">À propos</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- Bouton burger -->
-      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <div class="nav-container">
+        <a href="../index.html" class="logo" aria-label="Retour à l'accueil Verking">
+          <img src="../images/logo.png" alt="Logo Verking - Fournitures scolaires et bureautiques" width="120" height="60">
+        </a>
+        <ul class="nav-links" role="menubar">
+          <li role="none"><a href="../index.html" role="menuitem">Accueil</a></li>
+          <li role="none"><a href="./tousLesProduits.html" class="active" role="menuitem" aria-current="page">Tous les produits</a></li>
+          <li class="dropdown-parent" role="none">
+            <a href="./tousLesProduits.html" role="menuitem" aria-haspopup="true" aria-expanded="false">Catégories</a>
+            <ul class="dropdown" role="menu" aria-label="Catégories de produits">
+              <li role="none"><a href="./tousLesProduits.html" role="menuitem">➤ Primaire et crèche</a></li>
+              <li role="none"><a href="./tousLesProduits.html" role="menuitem">➤ CEM et Lycée</a></li>
+              <li role="none"><a href="./tousLesProduits.html" role="menuitem">➤ Adultes et pro</a></li>
+              <li role="none"><a href="./tousLesProduits.html" role="menuitem">➤ Trousse</a></li>
+              <li role="none"><a href="./tousLesProduits.html" role="menuitem">➤ Bureautique</a></li>
+            </ul>
+          </li>
+          <li role="none"><a href="Apropos.html" role="menuitem">À propos</a></li>
+          <li role="none"><a href="Contact.html" role="menuitem">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <button class="burger-btn" id="burgerBtn" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
       <span></span><span></span><span></span>
-      </button>
+    </button>
 
-      <!-- Aside menu -->
-      <aside class="side-menu" id="sideMenu">
-      <button class="close-aside" id="closeAside" aria-label="Fermer">&times;</button>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../pages/tousLesProduits.html">Tous les produits</a></li>
-        <li><a href="../pages/tousLesProduits.html">Catégories</a></li>
-        <li><a href="../pages/Apropos.html">À propos</a></li>
-        <li><a href="../pages/Contact.html">Contact</a></li>
+    <aside class="side-menu" id="sideMenu" aria-label="Menu de navigation mobile">
+      <button class="close-aside" id="closeAside" aria-label="Fermer le menu">&times;</button>
+      <ul role="menu">
+        <li role="none"><a href="../index.html" role="menuitem">Accueil</a></li>
+        <li role="none"><a href="../pages/tousLesProduits.html" role="menuitem">Tous les produits</a></li>
+        <li role="none"><a href="../pages/tousLesProduits.html" role="menuitem">Catégories</a></li>
+        <li role="none"><a href="../pages/Apropos.html" role="menuitem">À propos</a></li>
+        <li role="none"><a href="../pages/Contact.html" role="menuitem">Contact</a></li>
       </ul>
-      </aside>
+    </aside>
+  </header>
       <script src="../js/asideAjustement.js"></script>
 
   <main class="images-main">
