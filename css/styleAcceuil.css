@@ -407,14 +407,13 @@
       width: 220px;
     }
     .images-row .image-card img {
-      max-width: 100%;
-      max-height: 120px;
+      max-width: 80%;
+      max-height: 170px;       
       object-fit: contain;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(177,7,7,0.04);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(177,7,7,0.08);
       background: #fff;
-      margin-bottom: 10px;
-      transition: transform 0.3s;
     }
     .images-row .image-card:hover {
       box-shadow: 0 8px 24px rgba(177,7,7,0.13);
